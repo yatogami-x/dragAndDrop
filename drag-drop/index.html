@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Takım Projesi</title>
+</head>
+
+<body>
+    <h2> Takım Projesi </h2>
+    <div class="container">
+
+        <div class="main">
+            <h3>Bekleyen İşler</h3>
+            <div id="bekleyen" class="content"></div>
+
+        </div>
+
+        <div class="main">
+            <h3>Devam Eden İşler</h3>
+            <div class="content"></div>
+        </div>
+
+        <div class="main">
+            <h3>Biten İşler</h3>
+            <div class="content"></div>
+        </div>
+
+        <div class="main">
+            <h3>Görev Ekle</h3>
+            <input id="input1" type="text" placeholder="Ödev 6">
+            <textarea id="input2" type="text" placeholder="Video Çekilecek"></textarea>
+            <input id="input3" type="date">
+            <button id="btnAdd" onclick="insertItem()" type="button">Görev Ekle</button>
+            <button id="btnClr" onclick="clearAllItem()" type=" button ">Temizle</button>
+            <div id="clearItem" ondrop="deleteItem()" ondragover="dragOver(event)">
+                Silmek İçin Buraya Sürükleyiniz
+            </div>
+        </div>
+    </div>
+
+    <script src="myScript.js"></script>
+</body>
+
+</html>
